@@ -17,6 +17,8 @@
 ## About
 # **This is a fork of [Judge0](https://github.com/judge0/judge0). Please refer to [Judge0](https://github.com/judge0/judge0) for more details.**
 
+<a href="https://www.buymeacoffee.com/xagentx"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=xagentx&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+
 ## Features
 - Quick and easy [installation](https://judge0.com/#pricing)
 - Rich and verbose [API documentation](https://ce.judge0.com)
@@ -32,7 +34,7 @@
 For more information about these and other features, please [read the documentation](https://ce.judge0.com).
 
 ## Get Started
-1. Build the https://github.com/Agent-01/judge0-compilers image
+1. Build the [Judge0/compilers](https://github.com/judge0/compilers) image
 2. Build this image using what you just built
 3. Edit the docker-compose file from [Judge0](https://github.com/judge0/judge0) and change the image to what you just built
 4. Edit judge0.conf and put it in the same directory
