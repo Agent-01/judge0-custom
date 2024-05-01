@@ -15,7 +15,7 @@
 * [License](#license)
 
 ## About
-This is a fork of [Judge0](https://github.com/judge0/judge0). Please refer to [Judge0](https://github.com/judge0/judge0) for more details.
+# **This is a fork of [Judge0](https://github.com/judge0/judge0). Please refer to [Judge0](https://github.com/judge0/judge0) for more details.**
 
 ## Features
 - Quick and easy [installation](https://judge0.com/#pricing)
