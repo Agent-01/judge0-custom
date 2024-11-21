@@ -1,4 +1,4 @@
-FROM judge0/compilers:1.4.0 AS production
+FROM judge0-extra AS production
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
@@ -9,7 +9,7 @@ LABEL source_code=$JUDGE0_SOURCE_CODE
 ENV JUDGE0_MAINTAINER "Herman Zvonimir Došilović <hermanz.dosilovic@gmail.com>"
 LABEL maintainer=$JUDGE0_MAINTAINER
 
-ENV PATH "/usr/local/ruby-2.7.0/bin:/opt/.gem/bin:$PATH"
+ENV PATH "/usr/local/ruby-2.7.3/bin:/opt/.gem/bin:$PATH"
 ENV GEM_HOME "/opt/.gem/"
 
 RUN apt-get update && \
@@ -19,8 +19,9 @@ RUN apt-get update && \
       sudo && \
     rm -rf /var/lib/apt/lists/* && \
     echo "gem: --no-document" > /root/.gemrc && \
-    gem install bundler:2.1.4 && \
-    npm install -g --unsafe-perm aglio@2.3.0
+    gem install bundler:2.1.4
+    # && \
+    # /usr/local/node-20.12.2/bin/npm install -g --unsafe-perm aglio@2.3.0
 
 EXPOSE 2358
 
